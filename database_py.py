@@ -23,8 +23,7 @@ def insert(datTime, analyze):
                      VALUES (
                          '{datTime}',
                          '{analyze}'
-                     );
-""").fetchone()
+                     );""").fetchone()
     connection.commit()
 
 
