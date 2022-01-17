@@ -6,8 +6,8 @@ def select():
     cursor = connection.cursor()
     rows = cursor.execute(
         "SELECT analyze from Analysis ORDER BY date DESC").fetchone()
-    print(rows[0])
-    return str(rows[0])
+    print(rows)
+    return str(rows)
 
 
 def insert(datTime, analyze):
