@@ -16,7 +16,15 @@ def insert(datTime, analyze):
         "./database.db ")
     cursor = connection.cursor()
     cursor.execute(
-        f"""INSERT INTO Analysis VALUES ('{datTime}', '{analyze}')""").fetchone()
+        f"""INSERT INTO Analysis (
+                         date,
+                         [analyze]
+                     )
+                     VALUES (
+                         '{datTime}',
+                         '{analyze}'
+                     );
+""").fetchone()
     connection.commit()
 
 
