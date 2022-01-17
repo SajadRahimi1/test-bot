@@ -36,6 +36,7 @@ def analyze(update, context):
 def echo(update, context):
     """Echo the user message."""
     update.message.reply_text(update.message.text)
+    logger.warning(database_py.all())
 
 
 def error(update, context):
