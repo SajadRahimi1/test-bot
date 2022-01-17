@@ -16,7 +16,7 @@ def insert(datTime, analyze):
         "./database.db ")
     cursor = connection.cursor()
     cursor.execute(
-        f"""INSERT INTO Analysis (
+        f"""INSERT INTO 'Analysis' (
                          date,
                          [analyze]
                      )
