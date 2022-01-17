@@ -25,10 +25,12 @@ def update(update, context):
     print(new)
     database_py.insert(datetime.now(), new)
     update.message.reply_text(database_py.select())
+    logger.warning(database_py.select())
 
 
 def analyze(update, context):
     update.message.reply_text(database_py.select())
+    logger.warning(database_py.select())
 
 
 def echo(update, context):
