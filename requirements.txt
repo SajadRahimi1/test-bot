@@ -1,2 +1,3 @@
 python-telegram-bot
 youtube-dl
+vid_utils
